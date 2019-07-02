@@ -1,0 +1,119 @@
+{ "form1":{
+    "name": "one",
+    "items": 
+      [
+        {
+          "type": "text",
+          "attributes":{
+            "name" : "Name", 
+            "placeholder" : "Enter your Name",
+            "required": true,
+            "validate": "text",
+            "value": "",
+            "label": "Full Name",
+            "className": "textInput",
+            "disabled": false
+          }  
+        },
+        {
+          "type": "textarea",
+          "attributes":{
+            "name" : "About", 
+            "placeholder" : "Enter information",
+            "required": true,
+            "validate": "text",
+            "value": "",
+            "label": "About oneself",
+            "className": "md-textarea form-control",
+            "disabled": false
+          }
+        },
+        {
+          "type": "filler",
+          "attributes":{
+            "message" : "Letter"
+          }  
+        },
+        {
+          "type": "checkbox",
+          "attributes":{
+            "name" : "Agree", 
+            "placeholder" : "Change variant",
+            "required": false,
+            "validate": "checkbox",
+            "label": "Are you agree with president?",
+            "className": "checkBox",
+            "disabled": false,
+            "checked": false
+          }
+        },
+        {
+          "type": "select",
+          "attributes":{
+            "name" : "ChangeSelect", 
+            "placeholder" : "Change variant",
+            "required": true,
+            "validate": "select",
+            "value":"",
+            "label": "Change your way",
+            "className": "Select",
+            "disabled": false,
+            "options": [
+              {
+                "value": "work",
+                "text": "work",
+                "selected": true
+              },
+              {
+                "value": "study",
+                "text": "study",
+                "selected": false
+              },
+              {
+                "value": "fun",
+                "text": "fun",
+                "selected": false
+              }
+            ]
+          }
+        },
+        {
+          "type": "radio",
+          "attributes":{
+            "name" : "ChangeRadio", 
+            "placeholder" : "Change variant",
+            "required": true,
+            "validate": "radio",
+            "label": "Change your item",
+            "className": "Radio",
+            "disabled": false,
+            "items": [
+              {
+                "value": "one",
+                "name": "item",
+                "checked": true
+              },
+              {
+                "value": "two",
+                "name": "item",
+                "checked": false
+              },
+              {
+                "value": "three",
+                "name": "item",
+                "checked": false
+              }
+            ]    
+          }
+        },
+        {
+          "type": "button",
+          "attributes":{
+            "value" : "Accept", 
+            "className": "btn btn-primary"
+          }
+        }
+      ],
+    "postmessage": "We got data in form!!!" 
+  }
+}
